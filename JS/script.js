@@ -4,13 +4,14 @@ var show=document.getElementById("show");
 var element=document.getElementById("element");
 let i=0;
 add.addEventListener('click',function(){
-    while(element.value!='stop'){
-        lista.push(element);
-        
+    {
+        lista.push(element.value);
+        element.innerHTML='';
     }
 })
 show.addEventListener('click',function(){
     while(i<=lista.length){
+        const article=lista[i];
         el = document.createElement('li');
         el.innerHTML = lista[i];
         document.getElementById('output').appendChild(el);
