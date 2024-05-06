@@ -10,7 +10,7 @@ add.addEventListener('click',function(){
     }
 })
 show.addEventListener('click',function(){
-    while(i<=lista.length){
+    while(i<lista.length){
         const article=lista[i];
         el = document.createElement('li');
         el.innerHTML = lista[i];
