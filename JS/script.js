@@ -6,7 +6,7 @@ let i=0;
 add.addEventListener('click',function(){
     {
         lista.push(element.value);
-        element.innerHTML='';
+        element.value='';
     }
 })
 show.addEventListener('click',function(){
